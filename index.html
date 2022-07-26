@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="utf-8"/>
+       <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+       <title>Fun App</title> 
+       <link rel="stylesheet" href="styles.css"/>
+       <link rel="preconnect" href="https://fonts.googleapis.com"/>
+       <link rel="preconnect" href="https://fonts.gstatic.com/"/>
+       <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="global-loader">
+            <div class="load-cont">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="toggle-rect">
+                <diiv class="toggle-circle"></diiv>
+            </div>
+            <h1 id="head-word">App</h1>
+            <div class="board">
+                <div class="back">Back</div>
+                <div class="dic">
+                    <form acion="">
+                        <input type="text" id="dic-input" placeholder="Input a word"/>
+                        <br/>
+                        <input type="button" id="dic-btn" value="Get Meaning" />
+                        
+                    </form>
+                    <div class="loader-container"></div>
+                       <div class="dic-result"> </div>     
+                    
+                </div>
+                <div class="age">
+                 <form action="">
+                     <input type="text" id="age-input" placeholder="Enter name"/>
+                     <br />
+                     <input type="button" id="age-btn" value="My age"/>
+                 </form>
+                 <div class="grid-age">
+                     <div class="img-cover"></div>
+                     <img src="https://www.transparentpng.com/thumb/user/blak-frame-user-profile-png-icon--cupR3D.png"/>
+                     <div class="age-counter">?</div>
+                 </div>
+
+                </div>
+                <div class="country">
+                    <form action="">
+                        <input type="text" id="country-input" placeholder="input country"/>
+                        <br/>
+                        <input type="button" id="country-btn" value="My country"/>
+                        
+                    </form>
+                    <div class="country-loader-container"></div>
+                    <div class="country-result">
+                        <p><span class="country-headings">Full name:</span><span class="country-data country-name">Nigeria</span>
+                         </p>
+                         <p>
+                             <span class="country-headings">Capital:</span><span class="country-data country-capital">Abuja</span>
+                         </p>
+                         <p>
+                            <span class="country-headings">Region:</span><span class="country-data country-region">Africa</span>
+                        </p>
+                        <p>
+                            <span class="country-headings">Language:</span><span class="country-data country-language">English</span>
+                        </p>
+                        <p>
+                            <span class="country-headings">Population:</span><span class="country-data country-pop">200500000</span>
+                        </p>
+                        <div class="country-error-html"></div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="links">
+                <a href="#" data-group="dic" class="main-links"><span></span>Dictionary</a>
+                <a href="#" data-group="age" class="main-links"><span></span>Age guesser</a>
+                <a href="#" data-group="country" class="main-links"><span></span>Country info</a>
+            </div>
+        </div>
+       <script src="app.js"></script>    
+    </body>
+</html>
